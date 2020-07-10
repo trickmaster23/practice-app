@@ -20,14 +20,14 @@ function App() {
           <Route path="/create">
             <Create />
           </Route>
-          <Route path="/">
-            <Read />
-          </Route>
           <Route path="/update">
             <Update />
           </Route>
           <Route path="/delete">
             <Delete />
+          </Route>
+          <Route path="/">
+            <Read />
           </Route>
         </Switch>
       </div>
