@@ -5,19 +5,25 @@ import {
 
 function Topbar() {
   return (
-    <nav>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/users">Users</Link>
-        </li>
-      </ul>
-    </nav>
+    <div>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/create">CREATE</Link>
+          </li>
+          <li>
+            <Link to="/">READ</Link>
+          </li>
+          <li>
+            <Link to="/update">UPDATE</Link>
+          </li>
+          <li>
+            <Link to="/delete">DELETE</Link>
+          </li>
+        </ul>
+      </nav>
+      <h1>CRUD APP</h1>
+    </div>
   );
 }
 

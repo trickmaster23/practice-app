@@ -5,10 +5,11 @@ import {
   Route
 } from 'react-router-dom';
 
-import Home from './components/pages/Home';
-import About from './components/pages/About';
-import Users from './components/pages/Users';
 import Topbar from './components/navigation/Topbar';
+import Create from './components/pages/Create';
+import Read from './components/pages/Read';
+import Update from './components/pages/Update';
+import Delete from './components/pages/Delete';
 
 function App() {
   return (
@@ -16,14 +17,17 @@ function App() {
       <div>
         <Topbar />
         <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/users">
-            <Users />
+          <Route path="/create">
+            <Create />
           </Route>
           <Route path="/">
-            <Home />
+            <Read />
+          </Route>
+          <Route path="/update">
+            <Update />
+          </Route>
+          <Route path="/delete">
+            <Delete />
           </Route>
         </Switch>
       </div>
