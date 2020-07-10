@@ -18,8 +18,8 @@ function Read() {
       <h1>READ</h1>
       <ul>
         {user.map(item => (
-          <div>
-            <li key={item.id}>
+          <div key={item.id}>
+            <li>
               <p>ID: {item.id}</p>
               <p>Name: {item.name}</p>
               <p>Email: {item.email}</p>
